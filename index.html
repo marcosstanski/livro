@@ -60,7 +60,13 @@
 
 <script>
 
+   let currentIndex = 0;
 
+   function moveSlide(n) {
+   let Slides = document.querySelectorAll('.carousel=item');
+   curentIndex = (currentIndex + n + slides.length) % slides.length;
+   document.querySelector('.carousel=inner').style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+   }
 
 </script>
 
